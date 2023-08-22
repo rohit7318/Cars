@@ -1,0 +1,342 @@
+* {
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     overflow: hidden;
+}
+
+
+html,body
+{
+     width:100%;
+     min-height:110vh;
+     background: #86B2A3;
+     overflow: hidden !important;
+     /* position: relative; */
+}
+
+.main 
+
+{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background:radial-gradient(#dbdfdd 2% , #86B2A3 , #86B2A3);
+}
+
+nav
+{
+    /* margin: 0 auto; */
+    width: 100%;
+    height: 90px;
+    padding: 0 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    position: relative;
+    
+
+}
+
+
+nav i 
+{
+    color: white;
+
+}
+
+.nav-center
+{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+.nav-center h3 
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 2.2vw;
+    font-weight: 100;
+
+}
+
+.line
+{
+    width: 7vw;
+    height: 10px;
+    background-color: white;
+}
+
+.main-text
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+        
+.row h4 
+{
+    font-family: "Anton";
+    color: white;
+    font-size: 2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.main-text>h1
+{
+    font-family: 'Anton';
+    color: #fff;
+    font-weight: 100;
+    font-size: 8vw;
+    line-height: 8vw;
+}
+
+#year
+{
+    font-size: 1.7vw;
+    color: #3e6b5c;
+}
+
+
+
+#one
+{
+    width: 35vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#two
+{
+    width: 20vw;
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+#three
+{
+    width: 15vw;
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    
+}
+
+#bottom
+{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%,0);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1vw;
+    /* border: 2px solid red; */
+}
+.top-line-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    margin-bottom: 2vw;
+
+}
+
+.circle
+{
+    width: .8vw;
+    height: .8vw;
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+.dotted-line
+{
+    border-bottom: 2px dashed white;
+    width: 15vw;
+    height:.4vw;
+    
+}
+
+.dotted-border-circle
+{
+    border: 2px dashed white;
+    border-radius: 50%;
+    padding: .2vw;
+}
+
+.para
+{
+    color: white;
+    font-size: 1vw;
+    width: 80%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.capsule-button
+{
+    border-radius: 100px;
+    padding: .8vw 2.8vw;
+    border: none;
+    background-color: #c0e5da;
+    color: #425951;
+    font-weight: 900;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    
+    text-transform: uppercase;
+
+}
+
+
+  
+
+ 
+  
+  
+
+
+
+@media (max-width:600px)
+{
+   nav
+   {
+    height: 10vh;
+
+   }
+
+   .line
+   {
+    display: none;
+   }
+
+   .nav-center h3 
+   {
+    text-transform: uppercase;
+    font-size: 8vw;
+    white-space: nowrap;
+   }
+
+   .row h4
+   {
+    font-size: 5vw;
+    font-weight: 500;
+   }
+   #year
+   {
+    font-size: 4vw;
+    font-weight:500;
+   }
+
+   .main-text
+   {
+        top: 15%;
+   }
+
+   .main-text h1
+   {
+    white-space: nowrap;
+    font-size: 20vw;
+    line-height: 20vw;
+    /* letter-spacing: 10px; */
+   }
+
+   #one 
+   {
+    width: 85vw;
+    top: 60%;
+   }
+   #two
+   {
+     top: 35%;
+    left: -5%;
+    width: 40vw; 
+   }
+
+   #three
+   {
+    top: 35%;
+    width: 30vw;
+    right: -5%;
+    
+   }
+
+   #bottom
+   {
+        bottom: 10%;
+        /* border: 2px solid white; */
+   }
+  
+   .top-line-container
+   {
+    width: 100%;
+   }
+
+   .circle
+   {
+    width: 3vw;
+    height: 3vw;
+   }
+
+   .dotted-line
+   {
+    width: 30vw;
+    /* margin-bottom: 2vw; */
+   }
+
+   .para
+   {
+    width: 90%;
+    font-size: 2.7vw;
+    font-weight: 400;
+    /* margin-bottom: 3vw; */
+    /* margin-top: 2vw; */
+   }
+
+   .capsule-button
+   {
+    letter-spacing: 2px;
+    font-weight: 900;
+    background-color: #c3f0e2;
+    color: #3e6b5c;
+    font-size: 3vw;
+    padding: 4vw 8vw;
+    margin-top: 1.5vw;
+
+   }
+
+   
+
+}
+
+
